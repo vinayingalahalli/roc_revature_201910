@@ -62,6 +62,16 @@ code.
 10)Using java you can develop multithreaded(parallel programming) apps.
 
 
+Java Command Lines
+-----------------------
+javac FileName.java
+java FileName
+
+If You  have package then below command
+------------------------------------------
+javac -d . FileName.java
+java packageName.FileName
+
 
 
 
