@@ -1,10 +1,10 @@
 package eg4;
 
 public class Product {
-//name and cost are global but are instance or object level
+//name and cost are global but are instance or object level - call it as instance level variables or objects
 	String name;
 	float cost;
-	static float discount=9.5f; //global but class level
+	static float discount=9.5f; //global but class level - call it as class level variables or objects
 
 	public static void main(String[] args) {
 		
@@ -20,7 +20,7 @@ public class Product {
 		System.out.println("\nPrinting p2");
 		p2.printProduct();
 		
-		discount=4.2f;
+		discount=4.9f;
 		
 		p1.name="Television";
 		
