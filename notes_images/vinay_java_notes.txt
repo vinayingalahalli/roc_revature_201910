@@ -88,9 +88,21 @@ access specifiers or visbility modes
 -----------------------------------------
 public -> protected -> default -> private
 
+1)public
+anyone, anywhere
+
+2)protected
+within the same package, and by its child classes which may be in same package or it may be outside the package
+
+3)default
+only within the package
+
+4)private
+within the class only
+
 
 1)Classes & Objects
--------------------------------
+---------------------------------------------------
 * a class is a reflection or a template or a blueprint of any real world object
 which has a state and a behaviour.
 * a class can contain global variables or objects(instance or object & class level(static)), 
@@ -130,11 +142,11 @@ whenever an object is getting created for a particular class thats when the
 constructor of that class is invoked and it can help us setup the
 environment for that particular class.
 
-ClassName obj=new ConstructorName();
+ClassName obj=new ConstructorName(); //constructor name will be same name as classname
 
 *the java compiler creates 
 a default(visibility) non parameterised empty constructor in all the classes
-which it will take off when a pragrammer creates one of his own constructor.
+which it will take off when a programmer creates one of his own constructor.
 
 * as per the best coding practices its highly recommended to have a
 public non parametrised empty or non empty constructor in all the classes.
