@@ -212,7 +212,7 @@ a Child class for this parent and give the additional benifits in it.
 private stuff.
 
 *Such derivation between a parent or base or super class and a child
-or derived or sub class is basically called as inheritance where the property
+or derived or subclass is basically called as inheritance where the property
 which has been written in any of parent(ancestors) will be given to
 child where child doesnt have to rewrite it but it has a power to modify it
 which will be covered in polymorphism.
