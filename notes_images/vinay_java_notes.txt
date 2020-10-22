@@ -435,7 +435,7 @@ in java.
 			MethodNotFoundException, SQLException and more.
   b)Unchecked Exceptions(java.lang.RuntimeException) -> These exceptions are part of java.lang.RunTimeException
                          which occurs at a run time, it is upto programmer
-			weather he wants to handle this or not, if he
+			whether he wants to handle this or not, if he
 			doesnt handle it, it will lead to abnormal termination.
                       few unchecked exceptions are:
 			ArithmeticException, NullPointerException,
