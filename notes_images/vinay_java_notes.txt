@@ -308,7 +308,7 @@ x++; // will throw me an error as final variables are non modifiable.
 abstract data refers to that data whose implementation details
 are hidden.
 the customer or end user is never intrested in how the features are
-implemented, he will be intrested in weather the feature is given to him
+implemented, he will be intrested in whether the feature is given to him
 or not, hiding up of such implementation details is what is called as abstraction.
 
 abstraction in java can be acheived or done in 2 ways
@@ -346,7 +346,7 @@ you dont have to use abstract keyword to the method at all.
 *interface in java solves the daimond problem.
 * all the methods in interface are by default abstract as well as public.
 * if you declare any variable within a interface then that variable is
-considered to be as a statci & final variable.
+considered to be as a static & final variable.
 *a class can be extended only once but an interface can be implemented
 any number of times.
 * apart from this it gets all the properties like it can have inner interface,
