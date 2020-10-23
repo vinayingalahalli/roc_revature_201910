@@ -2,6 +2,7 @@ package eg1;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
@@ -97,6 +98,14 @@ public class Demo1 {
 		System.out.println("Collections.binarySearch(list1, 100) : "+Collections.binarySearch(list1, 100));
 		System.out.println("Collections.binarySearch(list1, -1) : "+Collections.binarySearch(list1, -1));
 		System.out.println("Collections.binarySearch(list1, 77) : "+Collections.binarySearch(list1, 77));
+		
+		System.out.println("Printing list1 elements using Iterator");
+		Iterator<Integer> i2=list1.iterator();
+		while (i2.hasNext()) {
+			System.out.println(i2.next());
+			
+		}
+		
 	}
 
 }//Task here is to recreate the same and try the same way to explore about the Queue Interface
