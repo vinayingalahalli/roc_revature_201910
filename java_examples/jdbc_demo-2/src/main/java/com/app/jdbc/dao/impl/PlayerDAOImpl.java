@@ -36,14 +36,37 @@ public class PlayerDAOImpl implements PlayerDAO {
 	}
 
 	@Override
-	public int updatePlayerContact(int id, long newContact) {
-		// Try this yourself
-		return 0;
+	public int updatePlayerContact(int id, long newContact) throws BusinessException {
+		int c = 0;
+		try (Connection connection = PostresSqlConnection.getConnection()) {
+			String sql = ""; //write update qury here
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			//set your ?(placeholders) with the values
+
+			c = preparedStatement.executeUpdate();
+
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e); // take off this line when in production
+			throw new BusinessException("Internal error occured.. Kindly contact SYSADMIN");
+		}
+		return c;
 	}
 
 	@Override
-	public void deletePlayer(int id) {
-		// Try this yourself
+	public void deletePlayer(int id) throws BusinessException {
+	//	int c = 0;
+		try (Connection connection = PostresSqlConnection.getConnection()) {
+			String sql = "";//write here the delete query
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			//set parameter here
+			
+			 preparedStatement.executeUpdate();
+
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e); // take off this line when in production
+			throw new BusinessException("Internal error occured.. Kindly contact SYSADMIN");
+		}
+	//	return c;
 
 	}
 
