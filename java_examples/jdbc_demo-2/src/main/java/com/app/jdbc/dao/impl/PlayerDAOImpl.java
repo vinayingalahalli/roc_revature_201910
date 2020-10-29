@@ -16,8 +16,7 @@ public class PlayerDAOImpl implements PlayerDAO {
 	public int createPlayer(Player player) throws BusinessException {
 		int c = 0;
 		try (Connection connection = PostresSqlConnection.getConnection()) {
-			String sql = "INSERT INTO roc_revature.player(id, name, age, gender, teamname, contact) "
-					+ "VALUES(?,?,?,?,?,?)";
+			String sql = PlayerQueries.INSERTPLAYER;
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, player.getId());
 			preparedStatement.setString(2, player.getName());
@@ -74,7 +73,7 @@ public class PlayerDAOImpl implements PlayerDAO {
 	public Player getPlayerById(int id) throws BusinessException {
 		Player player = null;
 		try (Connection connection = PostresSqlConnection.getConnection()) {
-			String sql = "select  name, age, gender, teamname, contact from roc_revature.player where id=?";
+			String sql = PlayerQueries.GETPLAYERBYID;
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, id);
 			ResultSet resultSet = preparedStatement.executeQuery();

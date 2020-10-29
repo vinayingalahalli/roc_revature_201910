@@ -1,4 +1,4 @@
-package com.app.jdbc.dbutil;
+package com.player.dao.dbutil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
