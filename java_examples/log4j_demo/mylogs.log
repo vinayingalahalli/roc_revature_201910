@@ -1,0 +1,5 @@
+[INFO]        com.app.LogMain       Hello from INFO             03-November-2020 Tuesday IST 22:12:30                
+[WARN]        com.app.LogMain       Hello from WARN             03-November-2020 Tuesday IST 22:12:30                
+[ERROR]        com.app.LogMain       Hello from ERROR             03-November-2020 Tuesday IST 22:12:30                
+[FATAL]        com.app.LogMain       Hello from FATAL             03-November-2020 Tuesday IST 22:12:30                
+[INFO]        com.app.service.Service       Hello from Service with name = TEST             03-November-2020 Tuesday IST 22:12:30                
