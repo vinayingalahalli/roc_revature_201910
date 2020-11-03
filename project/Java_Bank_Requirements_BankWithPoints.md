@@ -11,11 +11,10 @@
 ## Requirements
 1. Functionality should reflect the below user stories.
 2. Data is stored in a database.
-3. A custom stored procedure is called to perform some portion of the functionality.
-4. Data Access is performed through the use of JDBC in a data layer consisting of Data Access Objects.
-5. All input is received using the java.util.Scanner class.
-6. Log4j is implemented to log events to a file.
-7. A minimum of 10 JUnit test is written to test some functionality.
+3. Data Access is performed through the use of JDBC in a data layer consisting of Data Access Objects.
+4. All input is received using the java.util.Scanner class.
+5. Log4j is implemented to log events to a file.
+6. A minimum of 10 JUnit test is written to test some functionality.
 
 
 ## User Stories

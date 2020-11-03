@@ -1,5 +1,7 @@
 package com.app.jdbc.model;
 
+import java.util.Date;
+
 public class Player {
 
 	private int id;
@@ -8,6 +10,7 @@ public class Player {
 	private long contact;
 	private String gender;
 	private int age;
+	private Date dob;
 	
 	public Player() {
 		// TODO Auto-generated constructor stub
@@ -73,10 +76,20 @@ public class Player {
 		this.age = age;
 	}
 
+	
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
 	@Override
 	public String toString() {
 		return "Player [id=" + id + ", name=" + name + ", teamName=" + teamName + ", contact=" + contact + ", gender="
-				+ gender + ", age=" + age + "]";
+				+ gender + ", age=" + age + ", dob=" + dob + "]";
 	}
 	
 	

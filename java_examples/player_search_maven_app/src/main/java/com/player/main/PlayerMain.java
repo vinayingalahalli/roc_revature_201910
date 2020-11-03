@@ -35,6 +35,7 @@ public class PlayerMain {
 			}
 			switch (ch) {
 			case 1:
+			//	System.out.println("case - 1");//Take it off when presenting
 				System.out.println("Please Enter Player ID to get Player Details");
 				try {
 					int id = Integer.parseInt(scanner.nextLine());

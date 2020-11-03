@@ -18,19 +18,24 @@ public class PlayerSearchDAOImpl  implements PlayerSearchDAO{
 
 	@Override
 	public Player getPlayerById(int id) throws BusinessException {
+		System.out.println("IN DAO getPlayerId id = "+id);
 		Player player = null;
 		try (Connection connection = PostresSqlConnection.getConnection()) {
 			String sql = PlayerSearchQueries.GETPLAYERBYID;
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, id);
 			ResultSet resultSet = preparedStatement.executeQuery();
+		//	System.out.println("Query executed");
 			if (resultSet.next()) {
+			//	System.out.println("In IF");
 				player = new Player(id, resultSet.getString("name"), resultSet.getString("teamName"),
 						resultSet.getInt("age"), resultSet.getLong("contact"), resultSet.getString("gender"));
 			}else {
+			//	System.out.println("In else");
 				throw new BusinessException("Invalid ID!!!... No matching records found for the ID = "+id);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
+		//	System.out.println("In exception");
 			System.out.println(e); // take off this line when in production
 			throw new BusinessException("Internal error occured.. Kindly contact SYSADMIN");
 		}

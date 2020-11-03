@@ -24,6 +24,7 @@ public class PlayerDAOImpl implements PlayerDAO {
 			preparedStatement.setString(4, player.getGender());
 			preparedStatement.setString(5, player.getTeamName());
 			preparedStatement.setLong(6, player.getContact());
+			preparedStatement.setDate(7, new java.sql.Date(player.getDob().getTime()));
 
 			c = preparedStatement.executeUpdate();
 
@@ -80,6 +81,7 @@ public class PlayerDAOImpl implements PlayerDAO {
 			if (resultSet.next()) {
 				player = new Player(id, resultSet.getString("name"), resultSet.getString("teamName"),
 						resultSet.getInt("age"), resultSet.getLong("contact"), resultSet.getString("gender"));
+				player.setDob(resultSet.getDate("dob"));
 			}else {
 				throw new BusinessException("Invalid ID!!!... No matching records found for the ID = "+id);
 			}
