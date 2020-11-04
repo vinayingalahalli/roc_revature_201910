@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.app.service.impl.test.MyServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in com.app.service.impl.test.MyServiceImplTest
+testIsValidMobileNumber  Time elapsed: 0.023 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.app.service.impl.test.MyServiceImplTest.testIsValidMobileNumber(MyServiceImplTest.java:16)
+
+testIsValidPrimeNumber  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.app.service.impl.test.MyServiceImplTest.testIsValidPrimeNumber(MyServiceImplTest.java:11)
+
